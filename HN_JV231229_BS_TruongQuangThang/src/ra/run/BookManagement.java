@@ -70,7 +70,7 @@ public class BookManagement {
     public static void sortInterest() {
         for (int i = 0; i < length - 1; i++) {
             for (int j = i + 1; j < length; j++) {
-                if (books[i].getInterest() < books[j].getInterest()) {
+                if (books[i].getInterest() > books[j].getInterest()) {
                     Book temp = books[i];
                     books[i] = books[j];
                     books[j] = temp;
